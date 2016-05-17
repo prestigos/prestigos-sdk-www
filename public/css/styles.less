@@ -1,0 +1,136 @@
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "prism-okaidia.css";
+@import "../../bower_components/roboto-fontface/css/roboto-fontface.less";
+
+// Put your styles here
+@bar: #3F4449;
+@bg: #fff;
+@mainbg: #047E80;
+@maintxt: #fff;
+@h2: #20202a;
+@typeColor: #B36E00;
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1.6em;
+  color: #777;
+  background-color: @bg;
+}
+h1,h2,h3,h4 {
+  padding-top: 60px;
+  font-weight: normal;
+  margin-top: -35px;
+}
+p {
+  line-height: 1.8em;
+}
+.jumbotron {
+  background-color: @mainbg;
+  color: @maintxt;
+  margin-top: 30px;
+  h1 {
+    p {
+      font-size: 80px;
+    }
+    p.lead {
+      font-size: 30px;
+    }
+  }
+}
+.navbar-inverse {
+  background-color: @bar;
+}
+.affix-top,.affix{
+  position: static;
+}
+section {
+  box-shadow: 0px 0px 50px;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  font-size: 1.1em;
+  h3 {
+    color: black;
+  }
+  tr {
+    border-bottom: 1px solid #aaa;
+    font-size: 0.8em;
+  }
+  td, th {
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+  }
+  td {
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: monospace;
+  }
+  td + td {
+    color: @typeColor;
+    font-weight: inherit;
+    font-size: 0.9em;
+    font-family: inherit;
+  }
+  td + td + td {
+    color: inherit;
+  }
+}
+#sidebar {
+  background-color: @h2;
+  padding: 10px;
+  a {
+    color: #9CB6C3;
+    &:hover {
+      color: #000;
+    }
+  }
+  & li > a:hover, & li > a:focus {
+    background-color: @mainbg;
+    color: white;
+  }
+  .nav {
+    margin-left: 2em;
+    font-size: .85em;
+  }
+}
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+
+  h2 {
+    color: @h2;
+    font-size: 35px;
+  }
+  h3 {
+    border-bottom: 1px solid black;
+    font-size: 22px;
+    padding-bottom: 2px;
+    code {
+      font-size: 60%;
+    }
+  }
+  #sidebar li.active > a {
+    border:0 @mainbg solid;
+    border-right-width:4px;
+  }
+}
+@media (max-width: 500px) {
+  h3 {
+    code {
+      font-size: 40%;
+    }
+  }
+  code {
+    font-size: 55%;
+    white-space: normal;
+  }
+}

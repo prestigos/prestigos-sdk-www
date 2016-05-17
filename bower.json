@@ -1,0 +1,19 @@
+{
+  "name": "prestigos-sdk.www",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.0",
+    "modernizr": "~2.7.1",
+    "bootstrap": "~3.1.1",
+    "roboto-fontface": "~0.4.5",
+    "prism": "~1.5.0"
+  }
+}
