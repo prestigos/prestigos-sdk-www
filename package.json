@@ -32,7 +32,7 @@
     "url": "https://github.com/prestigos/website-prestigos-sdk.git"
   },
   "scripts": {
-    "dev": "node_modules/browserify/bin/cmd.js js/main.js > public/js/main.min.js",
-    "build": "node_modules/browserify/bin/cmd.js js/main.js | node_modules/uglify-js/bin/uglifyjs -o public/js/main.min.js"
+    "dev": "node_modules/browserify/bin/cmd.js --no-builtins js/main.js > public/js/main.min.js",
+    "build": "node_modules/browserify/bin/cmd.js --no-builtins js/main.js | node_modules/uglify-js/bin/uglifyjs -o public/js/main.min.js"
   }
 }
