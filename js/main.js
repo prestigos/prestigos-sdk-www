@@ -12,7 +12,7 @@ $('#sidebar').affix({
   }
 });
 
-var navHeight = $('#header').outerHeight(true) + 10;
+var navHeight = $('#header').outerHeight(true) + 180;
 
 $('body').scrollspy({
   target: '#leftCol',
