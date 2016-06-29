@@ -15,8 +15,8 @@ The properties accepted for an event are the following:
 | kpi         | string        | The id of the KPI of the event. |
 | registry    | integer       | The id of the registry of the event. |
 | event_date  | string / date | The DateTime of the event.<br>It can be a JavaScript Date object, or an string, in **ISO 8601** format.<br>If the time part is omited, it assumes the time as `12:00:00` |
-| amount      | integer       | _[optional]_<br>The amount property of the event. It must be an integer of value 1 or higher.<br>Default value: 1 |
-| cost        | number        | _[optional]_<br>The cost the event had. It must be an number of value 0 or higher.<br>Default value: 0 |
+| quantity    | integer       | _[optional]_<br>The quantity property of the event. It must be an integer of value 1 or higher.<br>Default value: 1 |
+| amount      | number        | _[optional]_<br>The monetary amount the event had. It must be an number of value 0 or higher.<br>Default value: 0 |
 | comment     | string        | _[optional]_<br> An string containing a comment about the event. |
 | duration    | integer       | _[optional]_<br> The duration of the event, in seconds. |
 | geo         | object        | _[optional]_<br> The longitude and latitude where the event occured. It must be an object containing the 2 properties `lon` and `lat` passed as numbers.<br>Like this: `"geo" : { "lon" : 37.769573, "lat" : -122.483123 }`  |
