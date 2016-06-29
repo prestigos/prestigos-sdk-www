@@ -1,6 +1,3 @@
-The prestigos-sdk is available as an [npm module](https://www.npmjs.org/package/prestigos-sdk).
+The prestigos-sdk.js is available as an [npm module](#not-yet).
 
-```
-npm install --save-dev prestigos-sdk
-```
 
