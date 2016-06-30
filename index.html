@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="no-js"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Prestigos SDK documentation</title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="favicon.png"><link rel="stylesheet" href="css/styles.css"></head><body><header role="banner" class="navbar navbar-inverse navbar-fixed-top"><div class="container"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand">PRESTIGOS</a></div><nav role="navigation" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="https://github.com/prestigos/prestigos-sdk.js">@Github</a></li></ul></nav></div></header><a name="home"></a><div class="jumbotron"><div class="container"><div class="row"><div class="col-md-7"><h1><p>PRESTIGOS SDK</p><p class="lead">SDK to access the Prestigos API</p></h1><ul><li>Compatible with node.js and directly on the browser</li><li>Can return Promises or use callbacks</li></ul></div><div class="col-md-5"></div></div></div></div><div class="container"><div class="row"><div id="leftCol" class="col-md-3"><ul id="sidebar" class="nav nav-stacked"><li><a href="#about">About</a></li><li><a href="#installation">Installation</a></li><li><a href="#connection">Create a connection</a></li><li><a href="#methods">Methods</a><ul class="nav"><li><a href="#userEntitiesCreate">userEntitiesCreate</a></li><li><a href="#userEntitiesEdit">userEntitiesEdit</a></li><li><a href="#userEntitiesRemove">userEntitiesRemove</a></li><li><a href="#eventsCreate">eventsCreate</a></li><li><a href="#queriesExecute">queriesExecute</a></li></ul></li><li><a href="#license">License</a></li></ul></div><div class="col-md-9"><h2 id="about">Prestigos SDK</h2><p>The project is hosted on <a href="#not-yet">GitHub</a>.</p>
+<!DOCTYPE html><html class="no-js"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Prestigos SDK documentation</title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="favicon.png"><link rel="stylesheet" href="css/styles.css"></head><body><header role="banner" class="navbar navbar-inverse navbar-fixed-top"><div class="container"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand">PRESTIGOS</a></div><nav role="navigation" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="https://github.com/prestigos/prestigos-sdk.js">@Github</a></li></ul></nav></div></header><a name="home"></a><div class="jumbotron"><div class="container"><div class="row"><div class="col-md-7"><h1><p>PRESTIGOS SDK</p><p class="lead">SDK to access the Prestigos API</p></h1><ul><li>Compatible with node.js and directly on the browser</li><li>Can return Promises or use callbacks</li></ul></div><div class="col-md-5"></div></div></div></div><div class="container"><div class="row"><div id="leftCol" class="col-md-3"><ul id="sidebar" class="nav nav-stacked"><li><a href="#about">About</a></li><li><a href="#installation">Installation</a></li><li><a href="#connection">Create a connection</a></li><li><a href="#methods">Methods</a><ul class="nav"><li><a href="#userEntitiesCreate">userEntitiesCreate</a></li><li><a href="#userEntitiesEdit">userEntitiesEdit</a></li><li><a href="#userEntitiesRemove">userEntitiesRemove</a></li><li><a href="#tagsGet">tagsGet</a></li><li><a href="#tagsCreate">tagsCreate</a></li><li><a href="#tagsEdit">tagsEdit</a></li><li><a href="#eventsCreate">eventsCreate</a></li><li><a href="#queriesExecute">queriesExecute</a></li></ul></li><li><a href="#license">License</a></li></ul></div><div class="col-md-9"><h2 id="about">Prestigos SDK</h2><p>The project is hosted on <a href="#not-yet">GitHub</a>.</p>
 <p>You can report bugs and discuss features on the <a href="#not-yet">issues page</a></p>
 <h2 id="installation">Installation</h2><p>The prestigos-sdk.js is available as an <a href="#not-yet">npm module</a>.</p>
 <h2 id="connection">Create a connection to Prestigos</h2><p>To create an instance, it&#39;s necesary to require the module. That module is a function, and should be called like this:</p>
@@ -191,6 +191,79 @@
   registry  : 1
 }).then(...);
 </code></pre>
+</section><section id="tagsGet"><h3 id="tagsGet">tagsGet
+  <code>prestigos.tagsGet()</code>
+</h3>
+
+<p>List of the existent tags.</p>
+<p>This method does not require options.</p>
+</section><section id="tagsCreate"><h3 id="tagsCreate">tagsCreate
+  <code>prestigos.tagsCreate(options)</code>
+</h3>
+
+<p>Create a tag</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The actual tag. Must be lowercase and no contain no spaces.</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>Description of the tag</td>
+</tr>
+<tr>
+<td>category</td>
+<td>string</td>
+<td>Id of the category</td>
+</tr>
+</tbody>
+</table>
+</section><section id="tagsEdit"><h3 id="tagsEdit">tagsEdit
+  <code>prestigos.tagsEdit(options)</code>
+</h3>
+
+<p>Edit an existant tag</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>The id of the tag</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The actual tag. Must be lowercase and no contain no spaces.</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>Description of the tag</td>
+</tr>
+<tr>
+<td>category</td>
+<td>string</td>
+<td>Id of the category</td>
+</tr>
+</tbody>
+</table>
 </section><section id="eventsCreate"><h3 id="eventsCreate">eventsCreate
   <code>prestigos.eventsCreate(events)</code>
 </h3>
