@@ -11,3 +11,9 @@ Edit an existant tag
 | description | string        | Description of the tag
 | category    | string        | Id of the category
 
+```javascript
+prestigos.tagsEdit({
+  id            : 'a24ebcaaaabbbb8',
+  name          : 'this-tag'
+}).then(...);
+```
