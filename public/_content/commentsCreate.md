@@ -2,7 +2,7 @@
   <code>prestigos.commentsCreate(options)</code>
 </h3>
 
-Create a tag
+Create a comment
 
 | Property    | Type          | Description |
 | ----------- | --------------|------------ |
