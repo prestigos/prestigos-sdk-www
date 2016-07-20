@@ -104,6 +104,14 @@ section {
   .nav {
     margin-left: 2em;
     font-size: .85em;
+    li {
+      &.active > ul {
+        display: block;
+      }
+      & > ul {
+        display: none;
+      }
+    }
   }
 }
 @media (min-width: 979px) {

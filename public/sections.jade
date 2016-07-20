@@ -11,12 +11,15 @@ h2#methods Methods
 
 p Each connection has the following methods:
 
+#userEntities
 section#userEntitiesCreate
   != partial('_content/userEntitiesCreate')
 section#userEntitiesEdit
   != partial('_content/userEntitiesEdit')
 section#userEntitiesRemove
   != partial('_content/userEntitiesRemove')
+
+#tags
 section#tagsGet
   != partial('_content/tagsGet')
 section#tagsCreate
@@ -24,6 +27,7 @@ section#tagsCreate
 section#tagsEdit
   != partial('_content/tagsEdit')
 
+#comments
 section#commentsGet
   != partial('_content/commentsGet')
 section#commentsCreate
@@ -33,6 +37,7 @@ section#commentsEdit
 section#commentsRemove
   != partial('_content/commentsRemove')
 
+#layers
 section#layersGet
   != partial('_content/layersGet')
 section#layersCreate
@@ -42,12 +47,17 @@ section#layersEdit
 section#layersRemove
   != partial('_content/layersRemove')
 
+#registries
 section#registriesGet
   != partial('_content/registriesGet')
 section#groupRegistriesGet
   != partial('_content/groupRegistriesGet')
+
+#events
 section#eventsCreate
   != partial('_content/eventsCreate')
+
+#queries
 section#queriesExecute
   != partial('_content/queriesExecute')
 
