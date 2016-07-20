@@ -12,7 +12,7 @@ Create a tag
 
 ```javascript
 prestigos.tagsCreate({
-  name          : 'some-tag',
+  tag           : 'some-tag',
   description   : 'This is the description of some-tag',
   category      : 'a2a2aa33bbbbccccddd'
 }).then(...);

@@ -14,6 +14,6 @@ Edit an existant tag
 ```javascript
 prestigos.tagsEdit({
   id            : 'a24ebcaaaabbbb8',
-  name          : 'this-tag'
+  tag           : 'this-tag'
 }).then(...);
 ```
