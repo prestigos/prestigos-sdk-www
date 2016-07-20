@@ -2,7 +2,10 @@
   <code>prestigos.commentsGet()</code>
 </h3>
 
-List of the existent comments.
+Return a comment or the list of all the existent comments.
 
-This method does not require options.
+
+| Property    | Type          | Description |
+| ----------- | --------------|------------ |
+| id          | string        | _[optional]_<br>The comment id. If omitted, it will return all the elements.
 
