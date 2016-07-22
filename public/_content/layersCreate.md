@@ -17,8 +17,13 @@ The `elements` property is an array of objects. Each object has the following pr
 | ----------- | --------------|------------ |
 | title       | string        | Title of the element
 | description | string        | Description of the element
-| icon        | string        | URL with the icon
-| geo         | object        | Object containing the longitude and latitude on the `lon` and `lat` properties respectively
+| type        | string        | The type of the element
+| icon        | string        | _[optional]_<br>URL with the icon
+| strokeColor | string        | _[optional]_<br>The color of the stroke
+| fillColor   | string        | _[optional]_<br>The color of the fill
+| fillOpacity | string        | _[optional]_<br>The opacity of the fill
+| geo         | object        | _[optional]_<br>Object containing the longitude and latitude on the `lon` and `lat` properties respectively
+| paths       | array         | _[optional]_<br>Array containing objects, and each object contains the longitude and latitude on the `lon` and `lat` properties respectively
 
 ```javascript
 prestigos.layersCreate({
