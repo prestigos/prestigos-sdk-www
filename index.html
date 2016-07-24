@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="no-js"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Prestigos SDK documentation</title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="favicon.png"><link rel="stylesheet" href="css/styles.css"></head><body><header role="banner" class="navbar navbar-inverse navbar-fixed-top"><div class="container"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand">PRESTIGOS</a></div><nav role="navigation" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="https://github.com/prestigos/prestigos-sdk.js">@Github</a></li></ul></nav></div></header><a name="home"></a><div class="jumbotron"><div class="container"><div class="row"><div class="col-md-7"><h1><p>PRESTIGOS SDK</p><p class="lead">SDK to access the Prestigos API</p></h1><ul><li>Compatible with node.js and directly on the browser</li><li>Can return Promises or use callbacks</li></ul></div><div class="col-md-5"></div></div></div></div><div class="container"><div class="row"><div id="leftCol" class="col-md-3"><ul id="sidebar" class="nav nav-stacked"><li><a href="#about">About</a></li><li><a href="#installation">Installation</a></li><li><a href="#connection">Create a connection</a></li><li><a href="#methods">Methods</a><ul class="nav"><li><a href="#userEntitiesCreate">userEntities</a><ul class="nav"><li><a href="#userEntitiesCreate">userEntitiesCreate</a></li><li><a href="#userEntitiesEdit">userEntitiesEdit</a></li><li><a href="#userEntitiesRemove">userEntitiesRemove</a></li></ul></li><li><a href="#tags">Tags</a><ul class="nav"><li><a href="#tagsGet">tagsGet</a></li><li><a href="#tagsCreate">tagsCreate</a></li><li><a href="#tagsEdit">tagsEdit</a></li><li><a href="#tagCategoriesGet">tagCategoriesGet</a></li><li><a href="#tagCategoriesCreate">tagCategoriesCreate</a></li><li><a href="#tagCategoriesEdit">tagCategoriesEdit</a></li><li><a href="#tagCategoriesRemove">tagCategoriesRemove</a></li></ul></li><li><a href="#comments">Comments</a><ul class="nav"><li><a href="#commentsGet">commentsGet</a></li><li><a href="#commentsCreate">commentsCreate</a></li><li><a href="#commentsEdit">commentsEdit</a></li><li><a href="#commentsRemove">commentsRemove</a></li></ul></li><li><a href="#layers">Layers</a><ul class="nav"><li><a href="#layersGet">layersGet</a></li><li><a href="#layersCreate">layersCreate</a></li><li><a href="#layersEdit">layersEdit</a></li><li><a href="#layersRemove">layersRemove</a></li></ul></li><li><a href="#registries">Registries</a><ul class="nav"><li><a href="#registriesAdd">registriesAdd</a></li><li><a href="#registriesGet">registriesGet</a></li><li><a href="#groupRegistriesGet">groupRegistriesGet</a></li></ul></li><li><a href="#kpis">KPIs</a><ul class="nav"><li><a href="#kpisCreate">kpisCreate</a></li></ul></li><li><a href="#events">Events</a><ul class="nav"><li><a href="#eventsCreate">eventsCreate</a></li></ul></li><li><a href="#events">Queries</a><ul class="nav"><li><a href="#queriesExecute">queriesExecute</a></li></ul></li></ul></li><li><a href="#license">License</a></li></ul></div><div class="col-md-9"><h2 id="about">Prestigos SDK</h2><p>The project is hosted on <a href="#not-yet">GitHub</a>.</p>
+<!DOCTYPE html><html class="no-js"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Prestigos SDK documentation</title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="favicon.png"><link rel="stylesheet" href="css/styles.css"></head><body><header role="banner" class="navbar navbar-inverse navbar-fixed-top"><div class="container"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand">PRESTIGOS</a></div><nav role="navigation" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="https://github.com/prestigos/prestigos-sdk.js">@Github</a></li></ul></nav></div></header><a name="home"></a><div class="jumbotron"><div class="container"><div class="row"><div class="col-md-7"><h1><p>PRESTIGOS SDK</p><p class="lead">SDK to access the Prestigos API</p></h1><ul><li>Compatible with node.js and directly on the browser</li><li>Can return Promises or use callbacks</li></ul></div><div class="col-md-5"></div></div></div></div><div class="container"><div class="row"><div id="leftCol" class="col-md-3"><ul id="sidebar" class="nav nav-stacked"><li><a href="#about">About</a></li><li><a href="#installation">Installation</a></li><li><a href="#connection">Create a connection</a></li><li><a href="#methods">Methods</a><ul class="nav"><li><a href="#userEntitiesCreate">userEntities</a><ul class="nav"><li><a href="#userEntitiesCreate">userEntitiesCreate</a></li><li><a href="#userEntitiesEdit">userEntitiesEdit</a></li><li><a href="#userEntitiesRemove">userEntitiesRemove</a></li></ul></li><li><a href="#tags">Tags</a><ul class="nav"><li><a href="#tagsGet">tagsGet</a></li><li><a href="#tagsCreate">tagsCreate</a></li><li><a href="#tagsEdit">tagsEdit</a></li><li><a href="#tagCategoriesGet">tagCategoriesGet</a></li><li><a href="#tagCategoriesCreate">tagCategoriesCreate</a></li><li><a href="#tagCategoriesEdit">tagCategoriesEdit</a></li><li><a href="#tagCategoriesRemove">tagCategoriesRemove</a></li></ul></li><li><a href="#comments">Comments</a><ul class="nav"><li><a href="#commentsGet">commentsGet</a></li><li><a href="#commentsCreate">commentsCreate</a></li><li><a href="#commentsEdit">commentsEdit</a></li><li><a href="#commentsRemove">commentsRemove</a></li></ul></li><li><a href="#layers">Layers</a><ul class="nav"><li><a href="#layersGet">layersGet</a></li><li><a href="#layersCreate">layersCreate</a></li><li><a href="#layersEdit">layersEdit</a></li><li><a href="#layersRemove">layersRemove</a></li></ul></li><li><a href="#registries">Registries</a><ul class="nav"><li><a href="#registriesAdd">registriesAdd</a></li><li><a href="#registriesGet">registriesGet</a></li><li><a href="#groupRegistriesGet">groupRegistriesGet</a></li></ul></li><li><a href="#kpis">KPIs</a><ul class="nav"><li><a href="#kpisAdd">kpisAdd</a></li><li><a href="#kpisCreate">kpisCreate</a></li></ul></li><li><a href="#events">Events</a><ul class="nav"><li><a href="#eventsCreate">eventsCreate</a></li></ul></li><li><a href="#events">Queries</a><ul class="nav"><li><a href="#queriesExecute">queriesExecute</a></li></ul></li></ul></li><li><a href="#license">License</a></li></ul></div><div class="col-md-9"><h2 id="about">Prestigos SDK</h2><p>The project is hosted on <a href="#not-yet">GitHub</a>.</p>
 <p>You can report bugs and discuss features on the <a href="#not-yet">issues page</a></p>
 <h2 id="installation">Installation</h2><p>The prestigos-sdk.js is available as an <a href="#not-yet">npm module</a>.</p>
 <h2 id="connection">Create a connection to Prestigos</h2><p>To create an instance, it&#39;s necesary to require the module. That module is a function, and should be called like this:</p>
@@ -791,7 +791,101 @@
 </tr>
 </tbody>
 </table>
-</section><div id="kpis"></div><section id="kpisCreate"><h3 id="kpisCreate">kpisCreate
+</section><div id="kpis"></div><section id="kpisAdd"><h3 id="kpisCreate">kpisCreate
+  <code>prestigos.kpisCreate(options)</code>
+</h3>
+
+<p>Create a KPI, then add it to the group as one of the available KPIs and add permissions to the user who is creating it.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Name of the KPI</td>
+</tr>
+<tr>
+<td>registry</td>
+<td>number</td>
+<td>Id of the registry</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>positive</td>
+<td>boolean</td>
+<td>Is this a positive KPI?</td>
+</tr>
+<tr>
+<td>monetary</td>
+<td>boolean</td>
+<td>This KPI has the monetery factor?</td>
+</tr>
+<tr>
+<td>has_quantity</td>
+<td>boolean</td>
+<td>It counts quantity?</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>boolean</td>
+<td>It stores duration?</td>
+</tr>
+<tr>
+<td>geo</td>
+<td>boolean</td>
+<td>It stores the longitude and latitude of the events?</td>
+</tr>
+<tr>
+<td>is_private</td>
+<td>boolean</td>
+<td>Is private? (that is, is available to other groups?)</td>
+</tr>
+<tr>
+<td>limits</td>
+<td>object</td>
+<td>The limits of the values.</td>
+</tr>
+</tbody>
+</table>
+<h4>limits:</h4><p>The limits object have properties, where each property is an object with the properties <code>min</code> and <code>max</code>.</p>
+<p>The available properties are the following:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>duration</td>
+<td>object</td>
+<td><code>min</code> and <code>max</code> possible duration of the event, in seconds. The minimal number must be equal or larger than 0</td>
+</tr>
+<tr>
+<td>monetary</td>
+<td>object</td>
+<td><code>min</code> and <code>max</code> possible amount of money, The minimal number must be equal or larger than 0</td>
+</tr>
+<tr>
+<td>quantities</td>
+<td>object</td>
+<td><code>min</code> and <code>max</code> possible quantity per event. The minimal number must be equal or larger than 1</td>
+</tr>
+</tbody>
+</table>
+</section><section id="kpisCreate"><h3 id="kpisCreate">kpisCreate
   <code>prestigos.kpisCreate(options)</code>
 </h3>
 
