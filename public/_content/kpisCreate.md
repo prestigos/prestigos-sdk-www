@@ -7,6 +7,7 @@ Create a KPI, then add it to the group as one of the available KPIs and add perm
 | Property    | Type          | Description |
 | ----------- | --------------|------------ |
 | name        | string        | Name of the KPI
+| registry    | number        | Id of the registry
 | description | string        | Description
 | positive    | boolean       | Is this a positive KPI?
 | monetary    | boolean       | This KPI has the monetery factor?
