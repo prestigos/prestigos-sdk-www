@@ -7,6 +7,8 @@ Create a user entity.
 | Property    | Type          | Description |
 | ----------- | --------------|------------ |
 | username    | string        | _[optional]_<br>The desired username
+| internal_id | string        | _[optional]_<br>The id used by the group internally
+| title       | string        | _[optional]_<br>The job's title used by the group internally
 | registry    | integer       | The id of the registry
 | legal       | string        | The legal id
 | name        | string        | The name or names

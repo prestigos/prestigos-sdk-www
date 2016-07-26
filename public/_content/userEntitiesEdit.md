@@ -7,6 +7,8 @@ Edit a user entity.
 | Property    | Type          | Description |
 | ----------- | --------------|------------ |
 | id          | string        | The id of the user entity
+| internal_id | string        | _[optional]_<br>The id used by the group internally
+| title       | string        | _[optional]_<br>The job's title used by the group internally
 | registry    | integer       | The id of the registry
 | phone       | string        | _[optional]_<br>The phone number
 | email       | string        | _[optional]_<br>Email address
