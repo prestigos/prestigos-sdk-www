@@ -15,7 +15,7 @@ Create a comment for an entry in the journal
 prestigos.journalCommentCreate({
   content : 'This is a comment',
   entry   : 'aaaaaaaaaabbbbbbb',
-  parent  : 1469651626
+  parent  : 'bbbbbccccccdddddd'
 }).then(...);
 ```
 
