@@ -23,7 +23,7 @@ prestigos.trends({
 
 // Process "myquery" on every user entity
 // from the kpi "aaaabbbccc" for 3 january months of 3 different years
-prestigos.queriesExecute({
+prestigos.trends({
   kpi           : 'aaaabbbccc',
   months        : [ '2014-01', '2015-01', '2016-01' ],
   query         : 'myquery',
