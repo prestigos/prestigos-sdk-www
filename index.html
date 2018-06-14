@@ -1440,6 +1440,11 @@ It&#39;s also possible to just pass one object, containing one event.</p>
 <td><em>[optional]</em><br> The longitude and latitude where the event occured. It must be an object containing the 2 properties <code>lon</code> and <code>lat</code> passed as numbers.<br>Like this: <code>&quot;geo&quot; : { &quot;lon&quot; : 37.769573, &quot;lat&quot; : -122.483123 }</code></td>
 </tr>
 <tr>
+<td>loc</td>
+<td>object</td>
+<td><em>[optional]</em><br> The coordinates as <code>x</code> and <code>y</code>, along with the blueprint id where the event occured. It must be an object containing the properties <code>x</code> and <code>y</code> passed as numbers and <code>blueprint</code> as an string with the id.<br>Like this: <code>&quot;loc&quot; : { &quot;x&quot; : 37, &quot;y&quot; : 123, &quot;blueprint&quot;: &quot;abbccdd&quot; }</code></td>
+</tr>
+<tr>
 <td>tags</td>
 <td>array</td>
 <td><em>[optional]</em><br> Array containing the ids of the tags of the event.</td>
