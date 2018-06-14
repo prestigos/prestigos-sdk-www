@@ -20,6 +20,7 @@ The properties accepted for an event are the following:
 | comment     | string        | _[optional]_<br> An string containing a comment about the event. |
 | duration    | integer       | _[optional]_<br> The duration of the event, in seconds. |
 | geo         | object        | _[optional]_<br> The longitude and latitude where the event occured. It must be an object containing the 2 properties `lon` and `lat` passed as numbers.<br>Like this: `"geo" : { "lon" : 37.769573, "lat" : -122.483123 }`  |
+| loc         | object        | _[optional]_<br> The coordinates as `x` and `y`, along with the blueprint id where the event occured. It must be an object containing the properties `x` and `y` passed as numbers and `blueprint` as an string with the id.<br>Like this: `"loc" : { "x" : 37, "y" : 123, "blueprint": "abbccdd" }`  |
 | tags        | array         | _[optional]_<br> Array containing the ids of the tags of the event. |
 
 ```javascript
