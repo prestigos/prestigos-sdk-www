@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="no-js"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Prestigos SDK documentation</title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="favicon.png"><link rel="stylesheet" href="css/styles.css"></head><body><header role="banner" class="navbar navbar-inverse navbar-fixed-top"><div class="container"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand">PRESTIGOS</a></div><nav role="navigation" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="https://github.com/prestigos/prestigos-sdk.js">@Github</a></li></ul></nav></div></header><a name="home"></a><div class="jumbotron"><div class="container"><div class="row"><div class="col-md-7"><h1><p>PRESTIGOS SDK</p><p class="lead">SDK to access the Prestigos API</p></h1><ul><li>Compatible with node.js and directly on the browser</li><li>Can return Promises or use callbacks</li></ul></div><div class="col-md-5"></div></div></div></div><div class="container"><div class="row"><div id="leftCol" class="col-md-3"><ul id="sidebar" class="nav nav-stacked"><li><a href="#about">About</a></li><li><a href="#installation">Installation</a></li><li><a href="#connection">Create a connection</a></li><li><a href="#methods">Methods</a><ul class="nav"><li><a href="#userEntitiesCreate">userEntities</a><ul class="nav"><li><a href="#userEntitiesGet">userEntitiesGet</a></li><li><a href="#userEntitiesSearch">userEntitiesSearch</a></li><li><a href="#userEntitiesCreate">userEntitiesCreate</a></li><li><a href="#userEntitiesEdit">userEntitiesEdit</a></li><li><a href="#userEntitiesRemove">userEntitiesRemove</a></li></ul></li><li><a href="#tags">Tags</a><ul class="nav"><li><a href="#tagsGet">tagsGet</a></li><li><a href="#tagsCreate">tagsCreate</a></li><li><a href="#tagsEdit">tagsEdit</a></li><li><a href="#tagCategoriesGet">tagCategoriesGet</a></li><li><a href="#tagCategoriesCreate">tagCategoriesCreate</a></li><li><a href="#tagCategoriesEdit">tagCategoriesEdit</a></li><li><a href="#tagCategoriesRemove">tagCategoriesRemove</a></li></ul></li><li><a href="#blueprints">Blueprints</a><ul class="nav"><li><a href="#blueprintsCreate">blueprintsCreate</a></li><li><a href="#blueprintsEdit">blueprintsEdit</a></li><li><a href="#blueprintsGet">blueprintsGet</a></li><li><a href="#blueprintsRemove">blueprintsRemove</a></li></ul></li><li><a href="#comments">Comments</a><ul class="nav"><li><a href="#commentsGet">commentsGet</a></li><li><a href="#commentsCreate">commentsCreate</a></li><li><a href="#commentsEdit">commentsEdit</a></li><li><a href="#commentsRemove">commentsRemove</a></li></ul></li><li><a href="#facilities">Facilities</a><ul class="nav"><li><a href="#facilitiesCreate">facilitiesCreate</a></li><li><a href="#facilitiesEdit">facilitiesEdit</a></li><li><a href="#facilitiesGet">facilitiesGet</a></li><li><a href="#facilitiesRemove">facilitiesRemove</a></li></ul></li><li><a href="#journal">Journal</a><ul class="nav"><li><a href="#journalEntryCreate">journalEntryCreate</a></li><li><a href="#journalEntryEdit">journalEntryEdit</a></li><li><a href="#journalCommentCreate">journalCommentCreate</a></li></ul></li><li><a href="#layers">Layers</a><ul class="nav"><li><a href="#layersGet">layersGet</a></li><li><a href="#layersCreate">layersCreate</a></li><li><a href="#layersEdit">layersEdit</a></li><li><a href="#layersRemove">layersRemove</a></li></ul></li><li><a href="#registries">Registries</a><ul class="nav"><li><a href="#registriesAdd">registriesAdd</a></li><li><a href="#registriesGet">registriesGet</a></li><li><a href="#groupRegistriesGet">groupRegistriesGet</a></li></ul></li><li><a href="#kpis">KPIs</a><ul class="nav"><li><a href="#kpisAdd">kpisAdd</a></li><li><a href="#kpisCreate">kpisCreate</a></li><li><a href="#kpisRemove">kpisRemove</a></li></ul></li><li><a href="#events">Events</a><ul class="nav"><li><a href="#eventsCreate">eventsCreate</a></li></ul></li><li><a href="#events">Queries</a><ul class="nav"><li><a href="#queriesExecute">queriesExecute</a></li></ul></li><li><a href="#reports">Reports</a><ul class="nav"><li><a href="#trends">trends</a></li><li><a href="#HRAnalytics">HRAnalytics</a></li></ul></li></ul></li><li><a href="#license">License</a></li></ul></div><div class="col-md-9"><h2 id="about">Prestigos SDK</h2><p>The project is hosted on <a href="#not-yet">GitHub</a>.</p>
+<!DOCTYPE html><html class="no-js"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Prestigos SDK documentation</title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="favicon.png"><link rel="stylesheet" href="css/styles.css"></head><body><header role="banner" class="navbar navbar-inverse navbar-fixed-top"><div class="container"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand">PRESTIGOS</a></div><nav role="navigation" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li></li></ul></nav></div></header><a name="home"></a><div class="jumbotron"><div class="container"><div class="row"><div class="col-md-7"><h1><p>PRESTIGOS SDK</p><p class="lead">SDK to access the Prestigos API</p></h1><ul><li>Compatible with node.js and directly on the browser</li><li>Can return Promises or use callbacks</li></ul></div><div class="col-md-5"></div></div></div></div><div class="container"><div class="row"><div id="leftCol" class="col-md-3"><ul id="sidebar" class="nav nav-stacked"><li><a href="#about">About</a></li><li><a href="#installation">Installation</a></li><li><a href="#connection">Create a connection</a></li><li><a href="#methods">Methods</a><ul class="nav"><li><a href="#userEntitiesCreate">userEntities</a><ul class="nav"><li><a href="#userEntitiesGet">userEntitiesGet</a></li><li><a href="#userEntitiesSearch">userEntitiesSearch</a></li><li><a href="#userEntitiesCreate">userEntitiesCreate</a></li><li><a href="#userEntitiesEdit">userEntitiesEdit</a></li><li><a href="#userEntitiesRemove">userEntitiesRemove</a></li></ul></li><li><a href="#tags">Tags</a><ul class="nav"><li><a href="#tagsGet">tagsGet</a></li><li><a href="#tagsCreate">tagsCreate</a></li><li><a href="#tagsEdit">tagsEdit</a></li><li><a href="#tagCategoriesGet">tagCategoriesGet</a></li><li><a href="#tagCategoriesCreate">tagCategoriesCreate</a></li><li><a href="#tagCategoriesEdit">tagCategoriesEdit</a></li><li><a href="#tagCategoriesRemove">tagCategoriesRemove</a></li></ul></li><li><a href="#blueprints">Blueprints</a><ul class="nav"><li><a href="#blueprintsCreate">blueprintsCreate</a></li><li><a href="#blueprintsEdit">blueprintsEdit</a></li><li><a href="#blueprintsGet">blueprintsGet</a></li><li><a href="#blueprintsRemove">blueprintsRemove</a></li></ul></li><li><a href="#comments">Comments</a><ul class="nav"><li><a href="#commentsGet">commentsGet</a></li><li><a href="#commentsCreate">commentsCreate</a></li><li><a href="#commentsEdit">commentsEdit</a></li><li><a href="#commentsRemove">commentsRemove</a></li></ul></li><li><a href="#facilities">Facilities</a><ul class="nav"><li><a href="#facilitiesCreate">facilitiesCreate</a></li><li><a href="#facilitiesEdit">facilitiesEdit</a></li><li><a href="#facilitiesGet">facilitiesGet</a></li><li><a href="#facilitiesRemove">facilitiesRemove</a></li></ul></li><li><a href="#journal">Journal</a><ul class="nav"><li><a href="#journalEntryCreate">journalEntryCreate</a></li><li><a href="#journalEntryEdit">journalEntryEdit</a></li><li><a href="#journalCommentCreate">journalCommentCreate</a></li></ul></li><li><a href="#layers">Layers</a><ul class="nav"><li><a href="#layersGet">layersGet</a></li><li><a href="#layersCreate">layersCreate</a></li><li><a href="#layersEdit">layersEdit</a></li><li><a href="#layersRemove">layersRemove</a></li></ul></li><li><a href="#registries">Registries</a><ul class="nav"><li><a href="#registriesAdd">registriesAdd</a></li><li><a href="#registriesGet">registriesGet</a></li><li><a href="#groupRegistriesGet">groupRegistriesGet</a></li></ul></li><li><a href="#kpis">KPIs</a><ul class="nav"><li><a href="#kpisAdd">kpisAdd</a></li><li><a href="#kpisCreate">kpisCreate</a></li><li><a href="#kpisRemove">kpisRemove</a></li></ul></li><li><a href="#events">Events</a><ul class="nav"><li><a href="#eventsCreate">eventsCreate</a></li></ul></li><li><a href="#events">Queries</a><ul class="nav"><li><a href="#queriesExecute">queriesExecute</a></li></ul></li><li><a href="#reports">Reports</a><ul class="nav"><li><a href="#trends">trends</a></li><li><a href="#HRAnalytics">HRAnalytics</a></li></ul></li></ul></li><li><a href="#license">License</a></li></ul></div><div class="col-md-9"><h2 id="about">Prestigos SDK</h2><p>The project is hosted on <a href="#not-yet">GitHub</a>.</p>
 <p>You can report bugs and discuss features on the <a href="#not-yet">issues page</a></p>
 <h2 id="installation">Installation</h2><p>The prestigos-sdk.js is available as an <a href="#not-yet">npm module</a>.</p>
 <h2 id="connection">Create a connection to Prestigos</h2><p>To create an instance, it&#39;s necesary to require the module. That module is a function, and should be called like this:</p>
@@ -6,8 +6,7 @@
   hash      : &#39;your-token&#39;,
   username  : &#39;your-username&#39;,
   group     : &#39;your-group&#39;
-});
-</code></pre>
+});</code></pre>
 <p>The returned object is a <strong>Prestigos connection</strong> instance, where all the methods to access Prestigos are available.</p>
 <h2 id="methods">Methods</h2><p>Each connection has the following methods:</p><div id="userEntities"></div><section id="userEntitiesGet"><h3 id="userEntitiesGet">userEntitiesGet
   <code>prestigos.userEntitiesGet(options)</code>
@@ -23,14 +22,12 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td><em>[optional]</em><br>The desired entity</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="userEntitiesSearch"><h3 id="userEntitiesSearch">userEntitiesSearch
   <code>prestigos.userEntitiesSearch(options)</code>
 </h3>
@@ -44,8 +41,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>country</td>
 <td>string</td>
 <td>2 characters code for the country.</td>
@@ -55,8 +51,7 @@
 <td>string</td>
 <td>String with the legal id</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="userEntitiesCreate"><h3 id="userEntitiesCreate">userEntitiesCreate
   <code>prestigos.userEntitiesCreate(options)</code>
 </h3>
@@ -70,8 +65,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>username</td>
 <td>string</td>
 <td><em>[optional]</em><br>The desired username</td>
@@ -146,8 +140,7 @@
 <td>object</td>
 <td><em>[optional]</em><br>Additional fields that the group can add. Each property must contain an string.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.userEntitiesCreate({
   legal     : &#39;EAGM0000000990&#39;,
   name      : &#39;maah&#39;,
@@ -157,8 +150,7 @@
   registry  : 1,
   group     : &#39;some-gruop-id&#39;,
   birthday  : new Date(&#39;1995-01-01&#39;)
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="userEntitiesEdit"><h3 id="userEntitiesCreate">userEntitiesEdit
   <code>prestigos.userEntitiesEdit(options)</code>
 </h3>
@@ -172,8 +164,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The id of the user entity</td>
@@ -218,16 +209,14 @@
 <td>object</td>
 <td><em>[optional]</em><br>Additional fields that the group can add. Each property must contain an string.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.userEntitiesEdit({
   id        : &#39;a5a678bcde&#39;,
   registry  : 1,
   phone     : &#39;56961720&#39;,
   email     : &#39;user@someweb.com&#39;,
   tags      : [ &#39;aaaaabbbbbbccccc&#39;, &#39;cccccdddddeeee&#39; ]
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="userEntitiesRemove"><h3 id="userEntitiesCreate">userEntitiesRemove
   <code>prestigos.userEntitiesRemove(options)</code>
 </h3>
@@ -241,8 +230,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The id of the user entity</td>
@@ -252,13 +240,11 @@
 <td>integer</td>
 <td>The id of the registry</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.userEntitiesRemove({
   id        : &#39;a5a678bcde&#39;,
   registry  : 1
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><div id="tags"></div><section id="tagsGet"><h3 id="tagsGet">tagsGet
   <code>prestigos.tagsGet()</code>
 </h3>
@@ -278,8 +264,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>tag</td>
 <td>string</td>
 <td>The actual tag. Must be lowercase and no contain no spaces.</td>
@@ -294,14 +279,12 @@
 <td>string</td>
 <td>Id of the category</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.tagsCreate({
   tag           : &#39;some-tag&#39;,
   description   : &#39;This is the description of some-tag&#39;,
   category      : &#39;a2a2aa33bbbbccccddd&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="tagsEdit"><h3 id="tagsEdit">tagsEdit
   <code>prestigos.tagsEdit(options)</code>
 </h3>
@@ -315,8 +298,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The id of the tag</td>
@@ -336,13 +318,11 @@
 <td>string</td>
 <td>Id of the category</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.tagsEdit({
   id            : &#39;a24ebcaaaabbbb8&#39;,
   tag           : &#39;this-tag&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="tagCategoriesGet"><h3 id="tagCategoriesGet">tagCategoriesGet
   <code>prestigos.tagCategoriesGet()</code>
 </h3>
@@ -357,14 +337,12 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td><em>[optional]</em><br>The category id. If omitted, it will return all the categories.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="tagCategoriesCreate"><h3 id="tagCategoriesCreate">tagCategoriesCreate
   <code>prestigos.tagCategoriesCreate(options)</code>
 </h3>
@@ -378,8 +356,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>name</td>
 <td>string</td>
 <td>The name of the category. Must be lowercase and no contain no spaces.</td>
@@ -399,8 +376,7 @@
 <td>object</td>
 <td>An object where each property is the id of a registry, and contains an array with the kpis where this category is required.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.tagCategoriesCreate({
   name          : &#39;places&#39;,
   description   : &#39;This is the description of the places category&#39;,
@@ -412,8 +388,7 @@
       &quot;dddd1111222222&quot;
     ]
   }
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="tagCategoriesEdit"><h3 id="tagCategoriesEdit">tagCategoriesEdit
   <code>prestigos.tagCategoriesEdit(options)</code>
 </h3>
@@ -427,8 +402,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The id of the category</td>
@@ -453,8 +427,7 @@
 <td>object</td>
 <td>An object where each property is the id of a registry, and contains an array with the kpis where this category is required.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.tagCategoriesEdit({
   id            : &#39;a24ebcaaaabbbb8&#39;,
   required      : {
@@ -464,8 +437,7 @@
       &quot;dddd1111222222&quot;
     ]
   }
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="tagCategoriesRemove"><h3 id="tagCategoriesRemove">tagCategoriesRemove
   <code>prestigos.tagCategoriesRemove()</code>
 </h3>
@@ -479,18 +451,15 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The category id.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.tagCategoriesRemove({
   id            : &#39;bbbccccddda2a2aa33b&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><div id="blueprints"></div><section id="blueprintsCreate"><h3 id="blueprintsCreate">blueprintsCreate
   <code>prestigos.blueprintsCreate(options)</code>
 </h3>
@@ -504,8 +473,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>name</td>
 <td>string</td>
 <td>The name of the blueprint</td>
@@ -525,15 +493,13 @@
 <td>string</td>
 <td>url of the image</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.blueprintsCreate({
   name          : &#39;floor1&#39;,
   description   : &#39;This is the description&#39;
   facility      : &#39;aabbccddd&#39;,
   image_url     : &#39;https://s3.prestigos.com/tnrdunreooeu&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="blueprintsEdit"><h3 id="blueprintsEdit">blueprintsEdit
   <code>prestigos.blueprintsEdit(options)</code>
 </h3>
@@ -547,8 +513,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The blueprint id.</td>
@@ -573,14 +538,42 @@
 <td>string</td>
 <td><em>[optional]</em><br>url of the image</td>
 </tr>
-</tbody>
-</table>
-<pre><code class="language-javascript">prestigos.blueprintsEdit({
-  id            : &#39;8ababacccc88&#39;,
-  name          : &#39;floor14&#39;,
-  image_url     : &#39;https://s3.prestigos.com/tnrdunreooeu&#39;
-}).then(...);
-</code></pre>
+<tr>
+<td><code>`</code>javascript</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>prestigos.blueprintsEdit({</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>  id            : &#39;8ababacccc88&#39;,</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>  name          : &#39;floor14&#39;,</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>  image_url     : &#39;<a href="https://s3.prestigos.com/tnrdunreooeu&#39;">https://s3.prestigos.com/tnrdunreooeu&#39;</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>}).then(...);</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>`</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 </section><section id="blueprintsGet"><h3 id="blueprintsGet">blueprintsGet
   <code>prestigos.blueprintsGet()</code>
 </h3>
@@ -595,14 +588,12 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td><em>[optional]</em><br>The blueprint id. If omitted, it will return all the blueprints.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="blueprintsRemove"><h3 id="blueprintsRemove">blueprintsRemove
   <code>prestigos.blueprintsRemove()</code>
 </h3>
@@ -616,18 +607,15 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The blueprint id.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.blueprintsRemove({
   id            : &#39;bbbccccddda2a2aa33b&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><div id="comments"></div><section id="commentsGet"><h3 id="commentsGet">commentsGet
   <code>prestigos.commentsGet()</code>
 </h3>
@@ -641,14 +629,12 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td><em>[optional]</em><br>The comment id. If omitted, it will return all the elements.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="commentsCreate"><h3 id="commentsCreate">commentsCreate
   <code>prestigos.commentsCreate(options)</code>
 </h3>
@@ -662,8 +648,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>entity</td>
 <td>string</td>
 <td>The entity id.</td>
@@ -678,14 +663,12 @@
 <td>string</td>
 <td>The main content.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.commentsCreate({
   entity        : &#39;a2a2aa33bbbbccccddd&#39;,
   is_medal      : true,
   content       : &#39;He did a good job&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="commentsEdit"><h3 id="commentsEdit">commentsEdit
   <code>prestigos.commentsEdit(options)</code>
 </h3>
@@ -699,8 +682,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>entity</td>
 <td>string</td>
 <td><em>[optional]</em><br>The entity id.</td>
@@ -715,12 +697,10 @@
 <td>string</td>
 <td><em>[optional]</em><br>The main content.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.commentsEdit({
   entity        : &#39;cccc888ababa&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="commentsRemove"><h3 id="commentsRemove">commentsRemove
   <code>prestigos.commentsRemove()</code>
 </h3>
@@ -734,18 +714,15 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The comment id.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.commentsRemove({
   id            : &#39;bbbccccddda2a2aa33b&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><div id="facilities"></div><section id="facilitiesCreate"><h3 id="facilitiesCreate">facilitiesCreate
   <code>prestigos.facilitiesCreate(options)</code>
 </h3>
@@ -759,8 +736,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>name</td>
 <td>string</td>
 <td>The name of the facility. Must be lowercase and no contain no spaces.</td>
@@ -770,13 +746,11 @@
 <td>string</td>
 <td>Description of the category</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.facilitiesCreate({
   name          : &#39;downtown-facility&#39;,
   description   : &#39;This is the description of the facility&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="facilitiesEdit"><h3 id="facilitiesEdit">facilitiesEdit
   <code>prestigos.facilitiesEdit(options)</code>
 </h3>
@@ -790,8 +764,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The facility id.</td>
@@ -806,13 +779,11 @@
 <td>string</td>
 <td><em>[optional]</em><br>Description of the category</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.facilitiesEdit({
   id            : &#39;cccc888ababa&#39;
   name          : &#39;downtown-facility&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="facilitiesGet"><h3 id="facilitiesGet">facilitiesGet
   <code>prestigos.facilitiesGet()</code>
 </h3>
@@ -827,14 +798,12 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td><em>[optional]</em><br>The facility id. If omitted, it will return all the facilities.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="facilitiesRemove"><h3 id="facilitiesRemove">facilitiesRemove
   <code>prestigos.facilitiesRemove()</code>
 </h3>
@@ -848,18 +817,15 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The facility id.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.facilitiesRemove({
   id            : &#39;bbbccccddda2a2aa33b&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><div id="journal"></div><section id="journalEntryCreate"><h3 id="journalEntryCreate">journalEntryCreate
   <code>prestigos.journalEntryCreate()</code>
 </h3>
@@ -873,8 +839,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>content</td>
 <td>string</td>
 <td>Content of the entry</td>
@@ -889,14 +854,12 @@
 <td>array</td>
 <td>The assigned kpis</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.journalEntryCreate({
   content : &#39;This is the entry&#39;,
   tags    : [ &#39;aaaabbcccddddd&#39;, &#39;6666eeee66e6e6&#39; ],
   kpis    : [ &#39;ccccc433333333&#39;, &#39;aaaaabbbbbbccc&#39; ]
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="journalEntryEdit"><h3 id="journalEntryEdit">journalEntryCreate
   <code>prestigos.journalEntryEdit()</code>
 </h3>
@@ -910,8 +873,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>Id of the entry</td>
@@ -931,14 +893,12 @@
 <td>array</td>
 <td>The assigned kpis</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.journalEntryEdit({
   content : &#39;This is the entry&#39;,
   tags    : [ &#39;aaaabbcccddddd&#39;, &#39;6666eeee66e6e6&#39; ],
   kpis    : [ &#39;ccccc433333333&#39;, &#39;aaaaabbbbbbccc&#39; ]
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="journalCommentCreate"><h3 id="journalCommentCreate">journalCommentCreate
   <code>prestigos.journalCommentCreate()</code>
 </h3>
@@ -952,8 +912,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>entry</td>
 <td>string</td>
 <td>Id of the entry</td>
@@ -968,14 +927,12 @@
 <td>string</td>
 <td><em>[optional]</em><br>If this comment is a reply to another comment, the id of the comment that is replying to.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.journalCommentCreate({
   content : &#39;This is a comment&#39;,
   entry   : &#39;aaaaaaaaaabbbbbbb&#39;,
   parent  : &#39;bbbbbccccccdddddd&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><div id="layers"></div><section id="layersGet"><h3 id="layersGet">layersGet
   <code>prestigos.layersGet()</code>
 </h3>
@@ -989,14 +946,12 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td><em>[optional]</em><br>The layer id. If omitted, it will return all the elements.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="layersCreate"><h3 id="layersCreate">layersCreate
   <code>prestigos.layersCreate(options)</code>
 </h3>
@@ -1010,8 +965,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>name</td>
 <td>string</td>
 <td>Name to identify the layer</td>
@@ -1026,8 +980,7 @@
 <td>array</td>
 <td>The elements of the layer</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>The <code>elements</code> property is an array of objects. Each object has the following properties:</p>
 <table>
 <thead>
@@ -1037,8 +990,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>title</td>
 <td>string</td>
 <td>Title of the element</td>
@@ -1083,8 +1035,7 @@
 <td>array</td>
 <td><em>[optional]</em><br>Array containing objects, and each object contains the longitude and latitude on the <code>lon</code> and <code>lat</code> properties respectively</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.layersCreate({
   name          : &#39;layer-pack-1&#39;,
   description   : &#39;Some layers&#39;,
@@ -1099,8 +1050,7 @@
       }
     }
   ]
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="layersEdit"><h3 id="layersEdit">layersEdit
   <code>prestigos.layersEdit(options)</code>
 </h3>
@@ -1114,14 +1064,12 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The layer id.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>The properties are the same as <code>layersCreate</code></p>
 <pre><code class="language-javascript">prestigos.layersEdit({
   id            : &#39;aaaabbbccccc11111&#39;,
@@ -1136,8 +1084,7 @@
       }
     }
   ]
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><section id="layersRemove"><h3 id="layersRemove">layersRemove
   <code>prestigos.layersRemove()</code>
 </h3>
@@ -1151,18 +1098,15 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The layer id.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.layersRemove({
   id            : &#39;bbbccccddda2a2aa33b&#39;
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><div id="registries"></div><section id="registriesAdd"><h3 id="registriesAdd">registriesAdd
   <code>prestigos.registriesAdd(options)</code>
 </h3>
@@ -1176,14 +1120,12 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>registry</td>
 <td>number</td>
 <td>Id of the registry</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="registriesGet"><h3 id="registriesGet">registriesGet
   <code>prestigos.registriesGet()</code>
 </h3>
@@ -1197,14 +1139,12 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>registry</td>
 <td>integer</td>
 <td><em>[optional]</em><br>The id of the registry. If omited, returns all the registries.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="groupRegistriesGet"><h3 id="groupRegistriesGet">groupRegistriesGet
   <code>prestigos.groupRegistriesGet()</code>
 </h3>
@@ -1218,14 +1158,12 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>registry</td>
 <td>integer</td>
 <td><em>[optional]</em><br>The id of the registry. If omited, returns all the registries.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><div id="kpis"></div><section id="kpisAdd"><h3 id="kpisAdd">kpisAdd
   <code>prestigos.kpisAdd(options)</code>
 </h3>
@@ -1239,8 +1177,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>kpi</td>
 <td>string</td>
 <td>Name of the KPI</td>
@@ -1250,8 +1187,7 @@
 <td>number</td>
 <td>Id of the registry</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="kpisCreate"><h3 id="kpisCreate">kpisCreate
   <code>prestigos.kpisCreate(options)</code>
 </h3>
@@ -1265,8 +1201,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>name</td>
 <td>string</td>
 <td>Name of the KPI</td>
@@ -1316,8 +1251,7 @@
 <td>object</td>
 <td>The limits of the values.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4>limits:</h4><p>The limits object have properties, where each property is an object with the properties <code>min</code> and <code>max</code>.</p>
 <p>The available properties are the following:</p>
 <table>
@@ -1328,8 +1262,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>duration</td>
 <td>object</td>
 <td><code>min</code> and <code>max</code> possible duration of the event, in seconds. The minimal number must be equal or larger than 0</td>
@@ -1344,8 +1277,7 @@
 <td>object</td>
 <td><code>min</code> and <code>max</code> possible quantity per event. The minimal number must be equal or larger than 1</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><section id="kpisRemove"><h3 id="kpisRemove">kpisRemove
   <code>prestigos.kpisRemove()</code>
 </h3>
@@ -1359,8 +1291,7 @@
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>id</td>
 <td>string</td>
 <td>The KPI id.</td>
@@ -1370,13 +1301,11 @@
 <td>number</td>
 <td>The registry id.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">prestigos.kpisRemove({
   id            : &#39;bbbccccddda2a2aa33b&#39;,
   registry      : 2
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><div id="events"></div><section id="eventsCreate"><h3 id="eventsCreate">eventsCreate
   <code>prestigos.eventsCreate(events)</code>
 </h3>
@@ -1393,8 +1322,7 @@ It&#39;s also possible to just pass one object, containing one event.</p>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>entity</td>
 <td>string</td>
 <td>The id of the entity that commited the event.</td>
@@ -1449,8 +1377,7 @@ It&#39;s also possible to just pass one object, containing one event.</p>
 <td>array</td>
 <td><em>[optional]</em><br> Array containing the ids of the tags of the event.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">var events = [
   {
     entity        : &#39;aaabbbccc&#39;,
@@ -1467,8 +1394,7 @@ It&#39;s also possible to just pass one object, containing one event.</p>
     kpi           : &#39;99g9g9g99&#39;
   }
 ];
-prestigos.eventsCreate(events).then(....);
-</code></pre>
+prestigos.eventsCreate(events).then(....);</code></pre>
 </section><div id="queries"></div><section id="queriesExecute"><h3 id="queriesExecute">queriesExecute
   <code>prestigos.queriesExecute(options)</code>
 </h3>
@@ -1483,8 +1409,7 @@ prestigos.eventsCreate(events).then(....);
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>registry</td>
 <td>integer</td>
 <td>The id of the registry to use the query with.</td>
@@ -1524,8 +1449,7 @@ prestigos.eventsCreate(events).then(....);
 <td>boolean</td>
 <td><em>[optional]</em><br> If true, it will show only the editable events.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">// Process &quot;myquery&quot;, and return the total of the entire time
 // of every user entity from registry 1
 prestigos.queriesExecute({
@@ -1551,8 +1475,7 @@ prestigos.queriesExecute({
   kpi           : &#39;aaaabbbccc&#39;,
   query         : &#39;myquery&#39;,
   registry      : 1
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 </section><div id="reports"></div><section id="trends"><h3 id="trends">trends
   <code>prestigos.trends(options)</code>
 </h3>
@@ -1567,8 +1490,7 @@ prestigos.queriesExecute({
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>registry</td>
 <td>integer</td>
 <td>The id of the registry to use the query with.</td>
@@ -1593,8 +1515,7 @@ prestigos.queriesExecute({
 <td>array</td>
 <td><em>[optional]</em><br> A list to show only the desired months, each month should be an string in the format <code>YYYY-MM</code>. Example: <code>[&quot;2015-01&quot;,&quot;2015-02&quot;,&quot;2015-05&quot;]</code>.<br>Default value is <code>undefined</code></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <pre><code class="language-javascript">// Process &quot;myquery&quot; on every user entity from registry 1
 prestigos.trends({
   query         : &#39;myquery&#39;,
@@ -1608,8 +1529,7 @@ prestigos.trends({
   months        : [ &#39;2014-01&#39;, &#39;2015-01&#39;, &#39;2016-01&#39; ],
   query         : &#39;myquery&#39;,
   registry      : 1
-}).then(...);
-</code></pre>
+}).then(...);</code></pre>
 <h3 id="HRAnalytics">HRAnalytics
   <code>prestigos.HRAnalytics(options)</code>
 </h3>
@@ -1624,8 +1544,7 @@ prestigos.trends({
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>registry</td>
 <td>integer</td>
 <td>The id of the registry to use the query with.</td>
@@ -1640,6 +1559,5 @@ prestigos.trends({
 <td>array</td>
 <td>Array containing the id of the desired KPIs. It must contain at least be one KPI.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </section><h2 id="license">License</h2><p>Double licensed as MIT and BSD</p></div></div></div><script src="js/main.min.js"></script></body></html>
